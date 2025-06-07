@@ -21,6 +21,10 @@ use App\Http\Controllers\ProductController; // Import your ProductController
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
+// Public routes for products (no authentication required)
+Route::get('/products', [ProductController::class, 'index']);
+Route::get('/products/{product}', [ProductController::class, 'show']);
+
 // Protected routes that require Sanctum authentication
 Route::middleware('auth:sanctum')->group(function () {
     // Route to get the authenticated user details

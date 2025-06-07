@@ -1,12 +1,14 @@
 <?php
+//  handles everything related to user authentication in your backend — like logging in, registering, and logging out users.
+
 
 namespace App\Http\Controllers;
 
-use App\Models\User; // Make sure to import the User model
+use App\Models\User; 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator; // Import Validator
-use Illuminate\Support\Facades\Auth; // Import Auth facade
+use Illuminate\Support\Facades\Validator; 
+use Illuminate\Support\Facades\Auth; 
 
 class AuthController extends Controller
 {

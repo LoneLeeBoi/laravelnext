@@ -1,5 +1,5 @@
 <?php
-
+	// Runs general setup code when app starts
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;

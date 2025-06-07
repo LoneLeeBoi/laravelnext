@@ -1,5 +1,5 @@
 <?php
-
+// is used to manage everything related to user data — not authentication (that’s for AuthController) but user profile and account management.
 namespace App\Http\Controllers;
 
 use App\Models\User; // Make sure to import the User model

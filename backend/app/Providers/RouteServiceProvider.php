@@ -1,5 +1,5 @@
 <?php
-
+	// Tells Laravel how to load and handle routes
 namespace App\Providers;
 
 use Illuminate\Cache\RateLimiting\Limit;
